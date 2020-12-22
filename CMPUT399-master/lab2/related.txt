@@ -1,0 +1,43 @@
+Q2. <1>
+There are different types of linkages that can provide the same motion. The current linkage provides 2 degrees of freedom by two revolute joints in the same parallel space.
+
+The current linkage is to mount the two motors horizontally but not at the same level, the mechanism is to link the two motors sequentially by gears. 
+1. The pros of this linkage are as follows:
+
+(1) . The bottom motor can be fixed to the bottom base without any movement to the motor itself needed and because of this the cable connected to the bottom motor is easily hidden and it will not affect the movement at all.
+
+(2). The combination of gears provided a much more sturdy construction than link the arm directly to the base-motor (link the arm directly to the base-motor will lead to a plenty of error in the vertical orientation for the reference of motor moving orientation)
+
+(3). The gear mechanism can provide more torque force compared to the design of link the arm directly to the base-motor and it is more precisely when working (which can fix the factory error from the electric motor itself to some degree)
+
+2. Cons of the gear design: Might lead to more errors because the connection between gears is not perfectly linked, it indeed has some loose space. The loose space can lead to errors in addition to the error of the motor itself.
+
+3. Compare to the belt-moving construction, The gears tend to provide more precise movement and tend to be fewer errors compared to the belt design. Since the belt is linked by multiple joints and each linkage between two joints have errors because of the empty space. However, the belt construction can provide the movement which can power the upper arm with its axle located in a different place without moving the motor. Moreover, the belt construction can power two or more arms (in different axle position) in synchronize steps with only one motor.
+However, the belt design can provide fewer errors in the horizontal orientation in reference to the motor spinning orientation. Our gear design alters a lot in joints to reduce the errors stated above.
+
+4. Compared to cylindrical arm robot design, the gear design has less flexibility and it has dead area which cannot be reached by the top. Moreover, the gear design needs more calculation in order to make the top of the arm to reach its desired cartesian coordination. 
+However, cylindrical arm robot design needs powered hydraulic arm or gear racks to power the upper arm. In our lego kits, we do not have the corresponding parts to design the cylindrical arm.
+
+
+Q2. <2>
+Determine the work space of your robot. State your answer in the report.
+
+As we can see from the pictures, the robot is able to draw within the area of a level Annulus shape.
+With the center as the center of the large gear connected to the base motor. The radius of the outer circle is 25.5cm and the radius of the inner circle is 13.1cm.
+
+When the robot is drawing at the outer circle, it stretches the upper arm to the longest position, a.k.a the upper arm is parallel (180 degrees) to the base of the upper motor which powers it.
+
+When the robot is drawing at the inner circle, it stretches the upper arm to the shortest position it could reach to. i.e. the upper motor moves 20 degrees towards the base of the upper motor. when the robot is performing the inner circle, the side close to the port A of the EV3 of the inner circle may yield to the wheel located on the ground which is to fix the robot firmly to the ground for 5 degrees. 
+
+
+
+
+
+
+
+
+
+
+
+
+

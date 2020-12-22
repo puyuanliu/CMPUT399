@@ -1,0 +1,33 @@
+How does error accumulate in rotation and linear movements of your robot, as function of the power applied to the robot motors?
+
+Your robot is "probably" not perfect. There are small errors in moves. For the straight line movement, the easiest way to see this could be to measure the actual distance travelled by the robot and compare it to the computed distance.
+
+Design two ways of measuring the error when your robot is moving in straight line. At least one of them must use input from some sensors. Compare the two methods. What do you find?
+Design two ways of measuring the error when the robot is rotating. At least one of them must use input from some sensors. Compare the two methods. What do you find? Add your answers to the report.
+
+
+1.  In q6, we are using the following measurements to calculate the location after the robot moves.
+	wr = wr*pi/180
+    wl = wl*pi/180
+    
+    
+    v = (wr+wl)*WHEEL_RADIUS/2
+    
+    if wr == wl:
+        x += v*t*cos(last_angle)
+        y += v*t*sin(last_angle)
+
+    else:
+        omega = (wr-wl)*WHEEL_RADIUS/LENGTH_BETWEEN_WHEELS
+        x += (v*sin(omega*t+last_angle)-v*sin(last_angle))/omega
+        y += (-v*cos(omega*t+last_angle)+v*cos(last_angle))/omega
+        last_angle += omega*t
+
+    Where 
+		WHEEL_RADIUS = 2.77
+		LENGTH_BETWEEN_WHEELS = 11.95
+	by ruler measurement.
+
+	There is inevitably error existence in ruler measurement, and the error may result in the deviation of calcualted location and the actual location.
+
+2. 
